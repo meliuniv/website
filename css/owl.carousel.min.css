@@ -76,15 +76,15 @@
 
 .owl-carousel
 .owl-controls
-/*.owl-dot,*/
+.owl-dot,
 .owl-carousel
-/*.owl-controls */
-/*.owl-nav*/
+.owl-controls
+.owl-nav
 .owl-next,
 .owl-carousel
 
-/*.owl-controls*/
-/*.owl-nav .owl-prev*/
+.owl-controls
+.owl-nav .owl-prev
 	{
 	cursor: pointer;
 	cursor: hand;
