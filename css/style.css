@@ -808,7 +808,7 @@ header {
   background: #fff;
   padding: 5px 5px;
   opacity: 1; }
-  #colorlib-blog .owl-theme .owl-controls /*.owl-nav*/ [class*=owl-] .owl-direction {
+  #colorlib-blog .owl-theme .owl-controls /*.owl-nav*/ [class*=owl-] /*.owl-direction*/ {
     background: transparent;
     color: #000;
     -webkit-box-shadow: none;
