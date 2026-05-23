@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+%%[
+  /* Initialize variables for the player's statistics */
+     - AMPScript Logic */
+  VAR @playerName, @hoursPlayed, @itemsCrafted, @questsCompleted, @topBadge
+
+  SET @playerName = AttributeValue("FirstName")
+  SET @hoursPlayed = AttributeValue("HoursPlayed")
+  SET @itemsCrafted = AttributeValue("ItemsCrafted")
+  SET @questsCompleted = AttributeValue("QuestsCompleted")
+  SET @topBadge = AttributeValue("TopBadge")
+
+  IF EMPTY(@playerName) THEN SET @playerName = "Villager" ENDIF
+  IF EMPTY(@hoursPlayed) THEN SET @hoursPlayed = "50+" ENDIF
+  IF EMPTY(@itemsCrafted) THEN SET @itemsCrafted = "250" ENDIF
+  IF EMPTY(@questsCompleted) THEN SET @questsCompleted = "12" ENDIF
+  IF EMPTY(@topBadge) THEN SET @topBadge = "Master Decorator" ENDIF
+]%%
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <title>Your Year in Review</title>
+  <style>
+    /* Reset styles for consistency across email clients */
+    html, body { margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important; background-color: #1a1a2e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-collapse: collapse !important; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; }
+    a { text-decoration: none; }
+    th { font-weight: normal; }
+    
+    /* Responsive overrides for mobile screens */
+    @media screen and (max-width: 600px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .col-stack { display: block !important; width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; padding-left: 0 !important; padding-right: 0 !important; }
+      .stat-padding { padding-bottom: 15px !important; }
+      .stat-spacer { display: none !important; }
+      .padding-mobile { padding-left: 20px !important; padding-right: 20px !important; }
+      .center-mobile { text-align: center !important; }
+    }
+
+    /* Force Dark Mode consistency */
+    @media (prefers-color-scheme: dark) {
+      .dark-bg { background-color: #111122 !important; }
+      .dark-text { color: #ffffff !important; }
+    }
+  </style>
+</head>
+<body class="dark-bg" style="background-color: #1a1a2e; margin: 0; padding: 0; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+      See your top stats and achievements from your time on the island this year!
+      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
+
+  <!-- Wrapper Table -->
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e;" class="dark-bg">
+    <tr>
+      <td align="center" style="padding: 20px 10px;">
+        
+        <!--[if mso]>
+        <table role="presentation" align="center" width="600" style="width:600px;">
+        <tr>
+        <td>
+        <![endif]-->
+
+        <!-- Main Email Container -->
+        <table role="presentation" width="100%" max-width="600" cellspacing="0" cellpadding="0" border="0" style="background-color: #252542; max-width: 600px; border-radius: 16px; overflow: hidden;" class="email-container">
+          
+          <!-- HEADER: Logo -->
+          <tr>
+            <td align="center" style="padding: 0px 0px 30px 0px;">
+              <img src="https://media.licdn.com/dms/image/v2/D4E3DAQEwebjljfkAxQ/image-scale_191_1128/image-scale_191_1128/0/1687354787861/sunblink_entertainment_cover?e=1780153200&v=beta&t=H6vJReVIew43sWzj0MPGXM0uVN8tAKWeYG3JqyY-iiA" alt="Studio Logo" width="600" style="width: 100%; max-width: 100%;">
+            </td>
+          </tr>
+
+          <!-- HERO SECTION: Banner Image -->
+          <tr>
+            <td align="center" style="padding: 0px 20px 20px 20px;">
+              <img src="https://assetsio.gnwcdn.com/_keyart01-optimized.png?width=2240&height=1710&fit=bounds&quality=85&format=jpg&auto=webp" alt="Game Update Promo" width="600" style="width: 100%; max-width: 100%;">
+            </td>
+          </tr>
+
+          <!-- HERO CONTENT: Title, Body -->
+          <tr>
+            <td align="center" style="padding: 40px 40px 30px 40px;" class="padding-mobile">
+              <h1 style="margin: 0 0 10px 0; color: #ffffff; font-family: sans-serif; font-size: 26px; font-weight: 800; line-height: 32px; letter-spacing: -0.5px;"> Ready for your recap, %%=v(@playerName)=%%? </h1>
+              <p style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 15px; line-height: 22px;"> You did some incredible things this season. Here is a look at your personal&nbsp;journey: </p>
+            </td>
+          </tr>
+
+          <!-- GRID: Features (Perfectly Stacking on Mobile) -->
+          <tr>
+            <td style="padding: 20px 30px 40px 30px;" class="padding-mobile">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  
+                  <!-- Stat 1 -->   
+                  <tr>
+                    <td style="padding: 0 30px 40px 30px;" class="padding-mobile">
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e; border-radius: 12px; border: 1px solid #2d2d4d;">
+                        <tr>
+                          <td style="padding: 25px; text-align: center;">
+                            <p style="margin: 0 0 5px 0; color: #38bdf8; font-family: sans-serif; font-size: 28px; font-weight: bold; line-height: 34px;">%%=v(@hoursPlayed)=%%</p>
+                          <p style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.5px; text-transform: uppercase;">Hours Played</p>
+                        </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Spacer Desktop 1 -->
+                  <!--[if mso]><td width="20" style="width:20px;">&nbsp;</td><![endif]-->
+                  <!--[if !mso]><!--><td width="20" class="stat-spacer" style="font-size: 0; line-height: 0;">&nbsp;</td><!--<![endif]-->
+
+                  <!-- Stat 2 -->
+                  <tr>
+                    <td style="padding: 0 30px 40px 30px;" class="padding-mobile">
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e; border-radius: 12px; border: 1px solid #2d2d4d;">
+                        <tr>
+                          <td style="padding: 25px; text-align: center;">
+                            <p style="margin: 0 0 5px 0; color: #4ade80; font-family: sans-serif; font-size: 28px; font-weight: bold; line-height: 34px;">%%=v(@itemsCrafted)=%%</p>
+                          <p style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.5px; text-transform: uppercase;">Items Crafted</p>
+                         </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Spacer Desktop 2 -->
+                  <!--[if mso]><td width="20" style="width:20px;">&nbsp;</td><![endif]-->
+                  <!--[if !mso]><!--><td width="20" class="stat-spacer" style="font-size: 0; line-height: 0;">&nbsp;</td><!--<![endif]-->
+
+                  <!-- Stat 3 -->
+                  <tr>
+                    <td style="padding: 0 30px 40px 30px;" class="padding-mobile">
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e; border-radius: 12px; border: 1px solid #2d2d4d;">
+                        <tr>
+                          <td style="padding: 25px; text-align: center;">
+                            <p style="margin: 0 0 5px 0; color: #fbbf24; font-family: sans-serif; font-size: 28px; font-weight: bold; line-height: 34px;">%%=v(@questsCompleted)=%%</p>
+                          <p style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.5px; text-transform: uppercase;">Quests Done</p>
+                        </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- CALLOUT BANNER -->
+          <tr>
+            <td style="padding: 0 30px 40px 30px;" class="padding-mobile">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e; border-radius: 12px; border: 1px solid #2d2d4d;">
+                <tr>
+                  <td style="padding: 25px; text-align: center;">
+                    <span style="background-color: #ff4757; color: #ffffff; font-family: sans-serif; font-size: 11px; font-weight: bold; padding: 4px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 1px;">Top Achievement</span>
+                    <h2 style="margin: 15px 0 10px 0; color: #ffffff; font-family: sans-serif; font-size: 20px; font-weight: bold;">%%=v(@topBadge)=%%</h2>
+                    <p style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 14px; line-height: 20px;"> You unlocked this rare title by interacting with the community and custom styling your camp space! </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td align="center" style="background-color: #111122; padding: 30px 20px; border-top: 1px solid #2d2d4d;">
+              <p style="margin: 0 0 10px 0; color: #8888aa; font-family: sans-serif; font-size: 12px; line-height: 18px;">Available on Nintendo Switch, iOS, and PC.</p>
+              <p style="margin: 0; color: #666688; font-family: sans-serif; font-size: 11px; line-height: 16px;">&copy; 2026 Studio Name. All rights reserved.<br><a href="#" style="color: #ff4757; text-decoration: none;">Unsubscribe</a></p>
+            </td>
+          </tr>
+
+        </table>
+
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
