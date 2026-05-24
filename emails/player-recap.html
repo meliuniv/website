@@ -38,37 +38,33 @@
     table, td { mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-collapse: collapse !important; }
     img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; }
     a { text-decoration: none; }
-    
+    th { font-weight: normal; }
+
     /* Responsive overrides for mobile screens */
     @media screen and (max-width: 600px) {
       .email-container { width: 100% !important; max-width: 100% !important; }
       .col-stack { display: block !important; width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; padding-left: 0 !important; padding-right: 0 !important; }
-      .stat-padding { padding-bottom: 15px !important; }
-      .stat-spacer { display: none !important; }
+      .timer-padding { padding-bottom: 15px !important; }
+      .timer-spacer { display: none !important; }
       .padding-mobile { padding-left: 20px !important; padding-right: 20px !important; }
       .center-mobile { text-align: center !important; }
-    }
-
-    /* Force Dark Mode consistency */
-    @media (prefers-color-scheme: dark) {
-      .dark-bg { background-color: #111122 !important; }
-      .dark-text { color: #ffffff !important; }
     }
   </style>
 </head>
 <body class="dark-bg" style="background-color: #1a1a2e; margin: 0; padding: 0; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
 
     <!-- HIDDEN PREHEADER TEXT -->
-    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-      See your top stats and achievements from your time on the island this year!
-      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-    </div>
+  <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+    Set your alarms! The global showcase broadcast begins shortly. Secure your digital seat. &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+  
+  </div>
 
   <!-- Wrapper Table -->
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e;" class="dark-bg">
     <tr>
       <td align="center" style="padding: 20px 10px;">
         
+        <!-- Outlook 600px Constraint Wrapper -->
         <!--[if mso]>
         <table role="presentation" align="center" width="600" style="width:600px;">
         <tr>
@@ -92,6 +88,7 @@
             </td>
           </tr>
 
+          
           <!-- HERO CONTENT: Title, Body -->
           <tr>
             <td align="center" style="padding: 40px 40px 30px 40px;" class="padding-mobile">
@@ -176,25 +173,17 @@
             </td>
           </tr>
 
-          <!-- FOOTER -->
-          <tr>
-            <td align="center" style="background-color: #111122; padding: 30px 20px; border-top: 1px solid #2d2d4d;">
+                    <!-- FOOTER -->
+                    <tr>
+                     <td align="center" style="background-color: #111122; padding: 30px 20px; border-top: 1px solid #2d2d4d;">
               <p style="margin: 0 0 10px 0; color: #8888aa; font-family: sans-serif; font-size: 12px; line-height: 18px;">Available on Nintendo Switch, iOS, and PC.</p>
               <p style="margin: 0; color: #666688; font-family: sans-serif; font-size: 11px; line-height: 16px;">&copy; 2026 Studio Name. All rights reserved.<br><a href="#" style="color: #ff4757; text-decoration: none;">Unsubscribe</a></p>
             </td>
           </tr>
-
         </table>
-
-        <!--[if mso]>
-        </td>
-        </tr>
-        </table>
-        <![endif]-->
-
-      </td>
-    </tr>
-  </table>
-
-</body>
+       </td>
+     </tr>
+    </table>
+   
+    </body>
 </html>
