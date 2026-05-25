@@ -62,7 +62,7 @@ span {
 h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.8);
   font-family: "Playfair Display", Georgia, serif;
-  margin: 0 0 30px 0; }
+  margin: 0 0 10px 0; }
 
 ::-webkit-selection {
   color: #fcfcfc;
@@ -103,10 +103,10 @@ h1, h2, h3, h4, h5, h6 {
       right: 0;
       content: '';
       background: rgba(0, 0, 0, 0.4); }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     #colorlib-page {
       padding-top: 5em; } }
-
+  
 #colorlib-main-nav {
   position: absolute;
   top: 0;
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transform: scale(0);
   transform: scale(0);
   overflow-y: scroll; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     #colorlib-main-nav {
       width: 300px; } }
   #colorlib-main-nav .colorlib-nav-toggle {
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   #colorlib-main-nav ul {
     padding: 0;
     margin: 0 0 3em 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       #colorlib-main-nav ul {
         padding: 20px 0 0 0; } }
     #colorlib-main-nav ul li {
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px 0;
         text-transform: uppercase;
         font-weight: 400; }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1200px) {
           #colorlib-main-nav ul li a {
             font-size: 16px; } }
         #colorlib-main-nav ul li a:hover, #colorlib-main-nav ul li a:active, #colorlib-main-nav ul li a:focus {
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
     display: table;
     z-index: 0;
     text-decoration: none; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       #colorlib-main-nav .gallery {
         width: 25%; } }
     @media screen and (max-width: 480px) {
@@ -302,7 +302,7 @@ header {
   right: 0;
   z-index: 9;
   margin: 0 auto; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     header {
       padding: 2em 0; } }
   header .colorlib-navbar-brand {
@@ -340,7 +340,7 @@ header {
   padding: 10em 0;
   clear: both;
   position: relative; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     #colorlib-services,
     #colorlib-contact,
     #colorlib-work,
@@ -428,7 +428,7 @@ header {
   font-size: 250px;
   color: #f0f0f0;
   font-weight: 700; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .bold {
       font-size: 60px; } }
 
@@ -678,12 +678,12 @@ header {
     width: 45%; }
     .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
       display: inline-block; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1200px) {
         .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
           height: 400px; } }
   .services-flex .one-third, .services-flex .one-forth {
     display: inline-block; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       .services-flex .one-third, .services-flex .one-forth {
         width: 100%;
         display: block; } }
@@ -760,7 +760,7 @@ header {
       padding: 4.5em 3.5em; }
       .work-entry .work-img:hover .display-t .work-name h2 {
         font-size: 34px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       .work-entry .work-img {
         height: 400px; }
         .work-entry .work-img .display-t {
@@ -1199,7 +1199,7 @@ header {
   margin: 0 auto;
   cursor: pointer;
   margin-top: 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .colorlib-nav-toggle {
       display: block;
       top: 0px; } }
