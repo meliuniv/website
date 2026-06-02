@@ -1,21 +1,4 @@
 <!DOCTYPE html>
-%%[
-  /* Initialize variables for the player's statistics */
-     - AMPScript Logic */
-  VAR @playerName, @hoursPlayed, @itemsCrafted, @questsCompleted, @topBadge
-
-  SET @playerName = AttributeValue("FirstName")
-  SET @hoursPlayed = AttributeValue("HoursPlayed")
-  SET @itemsCrafted = AttributeValue("ItemsCrafted")
-  SET @questsCompleted = AttributeValue("QuestsCompleted")
-  SET @topBadge = AttributeValue("TopBadge")
-
-  IF EMPTY(@playerName) THEN SET @playerName = "Villager" ENDIF
-  IF EMPTY(@hoursPlayed) THEN SET @hoursPlayed = "50+" ENDIF
-  IF EMPTY(@itemsCrafted) THEN SET @itemsCrafted = "250" ENDIF
-  IF EMPTY(@questsCompleted) THEN SET @questsCompleted = "12" ENDIF
-  IF EMPTY(@topBadge) THEN SET @topBadge = "Master Decorator" ENDIF
-]%%
 <html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
   <meta charset="utf-8">
@@ -58,7 +41,25 @@
     Set your alarms! The global showcase broadcast begins shortly. Secure your digital seat. &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
   
   </div>
-
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e;" class="dark-bg">
+  <tr>
+    <td align="center" style="padding: 40px 20px 30px 20px;" style="color: #ffffff;">%%[
+      /* Initialize variables for the player's statistics */<br>
+        Begin AMPScript Logic */
+      VAR @playerName, @hoursPlayed, @itemsCrafted,<br> @questsCompleted, @topBadge
+    <br><br>
+      SET @playerName = AttributeValue("FirstName")<br>
+      SET @hoursPlayed = AttributeValue("HoursPlayed")<br>
+      SET @itemsCrafted = AttributeValue("ItemsCrafted")<br>
+      SET @questsCompleted = AttributeValue("QuestsCompleted")<br>
+      SET @topBadge = AttributeValue("TopBadge")<br>
+    <br><br>
+      IF EMPTY(@playerName) THEN SET @playerName = "Villager" ENDIF<br>
+      IF EMPTY(@hoursPlayed) THEN SET @hoursPlayed = "50+" ENDIF<br>
+      IF EMPTY(@itemsCrafted) THEN SET @itemsCrafted = "250" ENDIF<br>
+      IF EMPTY(@questsCompleted) THEN SET @questsCompleted = "12" ENDIF<br>
+      IF EMPTY(@topBadge) THEN SET @topBadge = "Master Decorator" ENDIF<br>
+    ]%%</td></tr></table>
   <!-- Wrapper Table -->
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e;" class="dark-bg">
     <tr>
