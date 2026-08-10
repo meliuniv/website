@@ -36,30 +36,7 @@
 </head>
 <body class="dark-bg" style="background-color: #1a1a2e; margin: 0; padding: 0; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
 
-    <!-- HIDDEN PREHEADER TEXT -->
-  <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-    Set your alarms! The global showcase broadcast begins shortly. Secure your digital seat. &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-  
-  </div>
-<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e;" class="dark-bg">
-  <tr>
-    <td align="center" style="padding: 40px 20px 30px 20px;" style="color: #ffffff;">%%[
-      /* Initialize variables for the player's statistics */<br>
-        Begin AMPScript Logic */
-      VAR @guestName, @topDestination, @loyaltyPoints,<br> @nightsStayed, @topBadge
-    <br><br>
-      SET @guestName = AttributeValue("FirstName")<br>
-      SET @topDestination = AttributeValue("TopDestination")<br>
-      SET @loyaltyPoints = AttributeValue("LoyaltyPoints")<br>
-      SET @nightsStayed = AttributeValue("NightsStayed")<br>
-      SET @topBadge = AttributeValue("TopBadge")<br>
-    <br><br>
-      IF EMPTY(@guestName) THEN SET @guestName = "Villager" ENDIF<br>
-      IF EMPTY(@topDestination) THEN SET @topDestination = "Mystic Forest" ENDIF<br>
-      IF EMPTY(@loyaltyPoints) THEN SET @loyaltyPoints = "1000" ENDIF<br>
-      IF EMPTY(@nightsStayed) THEN SET @nightsStayed = "5" ENDIF<br>
-      IF EMPTY(@topBadge) THEN SET @topBadge = "Master Decorator" ENDIF<br>
-    ]%%</td></tr></table>
+
   <!-- Wrapper Table -->
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e;" class="dark-bg">
     <tr>
@@ -85,7 +62,7 @@
           <!-- HERO SECTION: Banner Image -->
           <tr>
             <td align="center" style="padding: 0px 20px 20px 20px;">
-              <img src="#" alt="Travel Update Promo" width="600" style="width: 100%; max-width: 100%;">
+              <img src="https://raw.githubusercontent.com/meliuniv/website/refs/heads/master/images/hero-proj-a.jpg" alt="Travel Update Promo" width="600" style="width: 100%; max-width: 100%;">
             </td>
           </tr>
 
@@ -93,7 +70,7 @@
           <!-- HERO CONTENT: Title, Body -->
           <tr>
             <td align="center" style="padding: 40px 40px 30px 40px;" class="padding-mobile">
-              <h1 style="margin: 0 0 10px 0; color: #ffffff; font-family: sans-serif; font-size: 26px; font-weight: 800; line-height: 32px; letter-spacing: -0.5px;"> Ready for your year-in-review, %%=v(@guestName)=%%? </h1>
+              <h1 style="margin: 0 0 10px 0; color: #ffffff; font-family: sans-serif; font-size: 26px; font-weight: 800; line-height: 32px; letter-spacing: -0.5px;"> Ready for your year-in-review, Stan? </h1>
               <div style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 15px; line-height: 22px;"> You did some incredible things this season. Here is a look at your personal&nbsp;journey: </div>
             </td>
           </tr>
@@ -110,7 +87,7 @@
                       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e; border-radius: 12px; border: 1px solid #2d2d4d;">
                         <tr>
                           <td style="padding: 25px; text-align: center;">
-                            <div style="margin: 0 0 5px 0; color: #38bdf8; font-family: sans-serif; font-size: 28px; font-weight: bold; line-height: 34px;">%%=v(@topDestination)=%%</div>
+                            <div style="margin: 0 0 5px 0; color: #38bdf8; font-family: sans-serif; font-size: 28px; font-weight: bold; line-height: 34px;">Cabo San Lucas</div>
                             <div style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.5px; text-transform: uppercase;">Top Destination</div>
                           </td>
                         </tr>
@@ -128,7 +105,7 @@
                       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e; border-radius: 12px; border: 1px solid #2d2d4d;">
                         <tr>
                           <td style="padding: 25px; text-align: center;">
-                            <div style="margin: 0 0 5px 0; color: #4ade80; font-family: sans-serif; font-size: 28px; font-weight: bold; line-height: 34px;">%%=v(@loyaltyPoints)=%%</div>
+                            <div style="margin: 0 0 5px 0; color: #4ade80; font-family: sans-serif; font-size: 28px; font-weight: bold; line-height: 34px;">20,000</div>
                             <div style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.5px; text-transform: uppercase;">Loyalty Points Earned</div>
                           </td>
                         </tr>
@@ -146,7 +123,7 @@
                       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #1a1a2e; border-radius: 12px; border: 1px solid #2d2d4d;">
                         <tr>
                           <td style="padding: 25px; text-align: center;">
-                            <div style="margin: 0 0 5px 0; color: #fbbf24; font-family: sans-serif; font-size: 28px; font-weight: bold; line-height: 34px;">%%=v(@nightsStayed)=%%</div>
+                            <div style="margin: 0 0 5px 0; color: #fbbf24; font-family: sans-serif; font-size: 28px; font-weight: bold; line-height: 34px;">18</div>
                             <div style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.5px; text-transform: uppercase;">Nights Stayed</div>
                           </td>
                         </tr>
@@ -166,8 +143,8 @@
                 <tr>
                   <td style="padding: 25px; text-align: center;">
                     <span style="background-color: #ff4757; color: #ffffff; font-family: sans-serif; font-size: 11px; font-weight: bold; padding: 4px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 1px;">Top Achievement</span>
-                    <h2 style="margin: 15px 0 10px 0; color: #ffffff; font-family: sans-serif; font-size: 20px; font-weight: bold;">%%=v(@topBadge)=%%</h2>
-                    <div style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 14px; line-height: 20px;"> You unlocked this rare title by interacting with the community and mentioning us on social media! </div>
+                    <h2 style="margin: 15px 0 10px 0; color: #ffffff; font-family: sans-serif; font-size: 20px; font-weight: bold;">Socialite</h2>
+                    <div style="margin: 0; color: #ddddff; font-family: sans-serif; font-size: 14px; line-height: 20px;"> You unlocked this rare title by interacting with community hashtagsand mentioning us on social media! </div>
                   </td>
                 </tr>
               </table>
@@ -182,9 +159,32 @@
             </td>
           </tr>
         </table>
+        
        </td>
      </tr>
     </table>
-   
-    </body>
+    
+    <table role="presentation" align="center" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; max-width: 600px;" border-radius: 16px; overflow: hidden; class="dark-bg">
+      <tr>
+        <td align="center" style="padding: 40px 20px 30px 20px;" style="color: #1a1a2e; font-family: sans-serif; font-size: 12px; line-height: 18px;  "><br>Demonstrates the ability to manage complex data extensions, prevent rendering errors for missing data fields, and deliver hyper-personalized user experiences.<br><br>
+          AMPScript Logic <br><br> is the AMPscript logic that retrieves and processes the traveler's data from the data extension. This script initializes variables, retrieves attribute values, and handles cases where attributes might be empty. The processed data is then used to dynamically populate the email content with personalized statistics for the traveler.
+         <br>
+    <br><br>%%[
+          /* Initialize variables for the traveler's statistics */<br>
+          <br>*/
+          VAR @guestName, @topDestination, @loyaltyPoints,<br> @nightsStayed, @topBadge
+        <br><br>/* Retrieve attribute values from the data extension */<br>
+          SET @guestName = AttributeValue("FirstName")<br>
+          SET @topDestination = AttributeValue("TopDestination")<br>
+          SET @loyaltyPoints = AttributeValue("LoyaltyPoints")<br>
+          SET @nightsStayed = AttributeValue("NightsStayed")<br>
+          SET @topBadge = AttributeValue("TopBadge")<br>
+        <br><br>/* Handle cases where attributes might be empty */<br>
+          IF EMPTY(@guestName) THEN SET @guestName = "" ENDIF<br>
+          IF EMPTY(@topDestination) THEN SET @topDestination = "" ENDIF<br>
+          IF EMPTY(@loyaltyPoints) THEN SET @loyaltyPoints = "" ENDIF<br>
+          IF EMPTY(@nightsStayed) THEN SET @nightsStayed = "" ENDIF<br>
+          IF EMPTY(@topBadge) THEN SET @topBadge = "" ENDIF<br>
+        ]%%</td></tr></table>
+    </body><br><br>
 </html>
