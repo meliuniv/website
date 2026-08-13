@@ -1,0 +1,53 @@
+%%[
+/* ===================================================================
+   PRODUCTION SIMULATION BLOCK
+   Since this code runs on GitHub Pages, the following variables 
+   simulate the fields that would naturally pull from an SFMC Data Extension.
+   =================================================================== */
+SET @SubscriberKey = "sub_987654321"
+SET @FirstName = "Alex" /* Try changing this to "" to test your fallback */
+SET @membershipType = "Points" /* Options: Hybrid, Points, Platinum */
+SET @Language = "FR"    /* Options: EN, ES, FR */
+
+/* 1. DEFENSIVE GREETING */
+IF EMPTY(@FirstName) THEN
+    SET @Greeting = "Valued Member"
+ELSE
+    SET @Greeting = @FirstName
+ENDIF
+
+/* 2. DYNAMIC HERO ROUTING */
+IF @membershipType == "Platinum" THEN
+    SET @HeroImage = "https://placeholder.com"
+    SET @ButtonColor = "#D4AF37" /* Platinum hex */
+ELSEIF @membershipType == "Points" THEN
+    SET @HeroImage = "https://placeholder.com"
+    SET @ButtonColor = "#C0C0C0" /* Points hex */
+ELSE
+    SET @HeroImage = "https://placeholder.com"
+    SET @ButtonColor = "#007BFF" /* Standard Blue */
+ENDIF
+]%%
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AMPscript Practice Blueprint</title>
+</head>
+<body>
+    <!-- Inline AMPscript Variable Execution -->
+    <h1>Hello, %%=v(@Greeting)=%%!</h1>
+    
+    <!-- Dynamic Image Pathing -->
+    <img src="%%=v(@HeroImage)=%%" width="600" alt="Your Dynamic Rewards">
+    
+    <!-- Dynamic CSS Hex Code Injection -->
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td bgcolor="%%=v(@ButtonColor)=%%" style="padding: 10px 20px; border-radius: 5px;">
+                <a href="#" style="color: #ffffff; text-decoration: none;">View Your Dashboard</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,12 +1,11 @@
-# Project 4: Ad-hoc Audience Suppression (SQL Engine)
+# Project 2: Ad-hoc Audience Suppression (SQL Engine)
 
 Since SQL queries run internally within SFMC Automation Studio, this project showcases the technical backend data design rather than a visual user interface.
 
 ### The Business Problem
 The marketing team issued a time-sensitive request to run a high-value promotional push. The requirement was to target guest who have an active contract, but explicitly **suppress** any subscribers flagged as cannotEmail, cannotCall, cannotMail, or cannotSms. It also restricts the audience to vacation ownership members in the USA and in a specific set of states. Finally, the query narrows the result by location and timing. It also excludes subscribers who toured within the last 180 days to prevent post-purchase customer annoyance. 
 
-```mermaid
-flowchart TD
+
     sub[Subscriber_Master_DE] -->|LEFT JOIN on SubscriberKey| tour[Tours_Master_DE]
     sub -->|NOT IN lookup on SubscriberKey| bounce[_Bounce Data View]
 
@@ -21,11 +20,6 @@ flowchart TD
     suppressed --> final
     suppressedBounce --> final
 
-    style sub fill:#f9f,stroke:#333,stroke-width:2px
-    style tour fill:#bbf,stroke:#333,stroke-width:2px
-    style bounce fill:#bfb,stroke:#333,stroke-width:2px
-    style final fill:#ffd700,stroke:#333,stroke-width:2px
-```
 
 ## Explanation
 
